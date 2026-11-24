@@ -35,8 +35,16 @@ namespace Session3_Assiment
             //object.Print the final result.
             StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
-            sb.Append("- Updated");
+            sb.Append(" - Updated");
+            //Console.WriteLine(sb);
+
+            #endregion
+            #region Question4
+            //4-Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
+            sb.Replace  ("Book List", "Library");
             Console.WriteLine(sb);
+
 
             #endregion
 
