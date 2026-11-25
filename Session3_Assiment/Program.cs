@@ -149,9 +149,19 @@ namespace Session3_Assiment
             #endregion
             #region Question15
             //15-Using the same books array, use a foreach loop to print every book title.
-            foreach (string i in books)
+            //foreach (string i in books)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+            #region Question16
+            //16-Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring".
+            for (int i = 0; i < books.Length; i++)
             {
-                Console.WriteLine(i);
+                if (books[i] == "Refactoring")
+                    break;
+                Console.WriteLine(i + 1 + ". " + books[i]);
+                
             }
             #endregion
 
