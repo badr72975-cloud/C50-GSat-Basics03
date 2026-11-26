@@ -120,7 +120,7 @@ namespace Session3_Assiment
 
             #region Questoin12
             //12 - Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop to print each book with its position number, like 1.  Clean Code.
-             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+             //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             //for (int i=0; i < books.Length; i++)
             //{
             //    Console.WriteLine(i+1+". "+books[i]);
@@ -166,13 +166,17 @@ namespace Session3_Assiment
             #endregion
             #region Question17
             //17-Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
-            for (int i = 0; i < books.Length; i++)
-            {
-                if (books[i] == "The Pragmatic Programmer")
-                    continue;
-                Console.WriteLine(i + 1 + ". " + books[i]);
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    if (books[i] == "The Pragmatic Programmer")
+            //        continue;
+            //    Console.WriteLine(i + 1 + ". " + books[i]);
 
-            }
+            //}
+            #endregion
+            #region Question18
+            //18-Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,use return to exit the method early instead of printing anything.
+            PrintFirstBook();
             #endregion
 
 
@@ -180,6 +184,15 @@ namespace Session3_Assiment
 
 
 
+        }
+        static void PrintFirstBook()
+        {
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            if (books == null || books.Length == 0)
+            {
+                return;
+            }
+            Console.WriteLine(books[0]);
         }
     }
 }
